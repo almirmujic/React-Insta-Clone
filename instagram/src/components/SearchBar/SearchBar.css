@@ -1,0 +1,66 @@
+.search__container {
+	background-color: #fff;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 54px;
+	border-bottom: .2px solid #333;
+}
+.search__content {
+	max-width: 1000px;
+	height: 54px;
+	display: flex;
+	margin: 0 auto;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.instagram__icon-container {
+	display: flex;
+	width: auto;
+	justify-content: center;
+	align-items: center;
+}
+.instagram__icon-container::after {
+	content: '';
+	display: inline-block;
+	border-right: 1px solid #333;
+	height: 29px;
+	margin-left: 1.2rem;
+}
+.instagram__icon {
+	width: 29px;
+	height: 29px;
+}
+.search__items-container {
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+	width: auto;
+	height: 54px;
+	align-items: center;
+}
+.instagram__logo {
+	margin-top: 9px;
+	height: 29px;
+	margin-left: 1.2rem;
+}
+.search__input {
+	all: unset;
+	height: 25px;
+	font-size: 12px;
+	background: rgb(242, 242, 242);
+	width: 180px;
+	color: rgb(96, 96, 96);
+	text-align: center;
+}
+.search__input:focus {
+	text-align: left;
+}
+.social__icons {
+	display: flex;
+}
+.icon {
+	height: 29px;
+	width: 29px;
+}
