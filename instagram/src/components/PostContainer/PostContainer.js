@@ -1,11 +1,22 @@
 import React from 'react';
 import CommentSection from '../CommentSection/CommentSection';
 
-export default function PostContainer() {
+import './PostContainer.css';
+
+export default function PostContainer(props) {
 	return (
 		<div>
-			Post container
-			<CommentSection />
+			<header>
+				<img
+					className="thumbnail"
+					alt={props.post.username}
+					src={props.post.thumbnailUrl}
+				/>
+				<span>{props.post.username}</span>
+			</header>
+
+			<CommentSection comments={props.post.comments} />
+			<input type="text" placeholder="Make a comment..." />
 		</div>
 	);
 }
