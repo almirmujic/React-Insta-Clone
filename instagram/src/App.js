@@ -8,7 +8,9 @@ export default function App() {
 	return (
 		<div>
 			<SearchBar />
-			{dummyData.map((post) => <PostContainer post={post} />)}
+			{dummyData.map((post) => (
+				<PostContainer key={post.id} post={post} />
+			))}
 		</div>
 	);
 }
