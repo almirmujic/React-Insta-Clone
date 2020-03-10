@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Comment(props) {
 	return (
@@ -12,3 +13,13 @@ export default function Comment(props) {
 		</div>
 	);
 }
+
+Comment.propTypes = {
+	username: PropTypes.string.isRequired,
+	text: PropTypes.string.isRequired
+};
+
+Comment.defaultProps = {
+	username: 'Default',
+	text: 'Comment not provided.'
+};
