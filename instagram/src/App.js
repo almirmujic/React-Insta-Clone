@@ -8,7 +8,12 @@ export default function App() {
 	return (
 		<div>
 			<SearchBar />
-			{dummyData.map((post) => <PostContainer />)}
+			{dummyData.map((post) => (
+				<PostContainer
+					comments={post.comments}
+					userName={post.username}
+				/>
+			))}
 		</div>
 	);
 }
