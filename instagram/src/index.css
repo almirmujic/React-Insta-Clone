@@ -8,8 +8,8 @@ body {
 		'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	color: #fff;
-	background: rgb(14, 19, 28);
+	color: #333;
+	background: #fff;
 }
 
 code {
