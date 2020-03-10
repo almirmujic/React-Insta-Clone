@@ -1,17 +1,15 @@
 import React from 'react';
+import Comment from '../Comment/Comment';
 
 export default function CommentSection(props) {
 	return (
 		<div>
 			{props.comments.map((comment) => (
-				<div>
-					<p>
-						<span style={{ fontWeight: 'bold' }}>
-							{comment.username}
-						</span>
-						{comment.text}
-					</p>
-				</div>
+				<Comment
+					username={comment.username}
+					text={comment.text}
+					key={comment.id}
+				/>
 			))}
 		</div>
 	);
