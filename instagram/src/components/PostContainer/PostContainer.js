@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import CommentSection from '../CommentSection/CommentSection';
 
 import './PostContainer.css';
@@ -20,3 +21,7 @@ export default function PostContainer(props) {
 		</div>
 	);
 }
+
+PostContainer.propTypes = {
+	post: PropTypes.object.isRequired
+};
