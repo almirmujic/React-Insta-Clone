@@ -1,0 +1,57 @@
+.post-container {
+	margin-top: 2rem;
+	width: 480px;
+	position: relative;
+}
+.post-header {
+	display: flex;
+	align-items: center;
+	height: 58px;
+	border: 1px solid #c4c4c4;
+	border-bottom: none;
+}
+.post-header span {
+	font-weight: 600;
+}
+.thumbnail {
+	width: 29px;
+	height: 29px;
+	border-radius: 50%;
+	margin: 12px;
+}
+.post-image {
+	width: 100%;
+	height: auto;
+}
+.post__details {
+	position: relative;
+	border: 1px solid #c4c4c4;
+	border-top: none;
+	min-height: 22rem;
+}
+.post__content {
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+.like-comment {
+	display: flex;
+	margin-bottom: 1rem;
+}
+.lc-icon,
+.lc-icon2 {
+	width: 29px;
+	height: 29px;
+}
+.lc-icon2 {
+	margin-left: .8rem;
+}
+.add-comment {
+	all: unset;
+	box-sizing: border-box;
+	padding-left: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2rem;
+}
