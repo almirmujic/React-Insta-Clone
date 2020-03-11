@@ -1,1 +1,8 @@
-
+.post-layout {
+	padding-top: 54px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
