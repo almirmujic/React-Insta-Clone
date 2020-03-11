@@ -2,10 +2,11 @@
 	background-color: #fff;
 	width: 100%;
 	position: fixed;
+	z-index: 2;
 	top: 0;
 	left: 0;
 	height: 54px;
-	border-bottom: .2px solid #333;
+	border-bottom: .2px solid rgb(196, 196, 196);
 }
 .search__content {
 	max-width: 1000px;
