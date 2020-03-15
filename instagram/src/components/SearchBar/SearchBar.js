@@ -2,7 +2,7 @@ import React from 'react';
 
 import './SearchBar.css';
 
-export default function SearchBar() {
+export default function SearchBar(props) {
 	return (
 		<div className="search__container">
 			<div className="search__content">
@@ -23,6 +23,7 @@ export default function SearchBar() {
 						className="search__input"
 						type="text"
 						placeholder="Search"
+						onChange={props.handleFilter}
 					/>
 					<div className="social__icons">
 						<img
