@@ -1,42 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import SearchBar from './components/SearchBar/SearchBar';
-import PostContainer from './components/PostContainer/PostContainer';
-
-import dummyData from './dummy-data';
+import React from 'react';
 
 import './App.css';
 
-export default function App() {
-	const [ data, setData ] = useState([]);
-	const [ filterData, setFilterData ] = useState([]);
-
-	useEffect(() => {
-		setData(dummyData);
-	}, []);
-
-	const handleFilter = (e) => {
-		const posts = data.filter((post) => {
-			if (post.username.includes(e.target.value)) {
-				return post;
-			}
-			return null;
-		});
-		setFilterData(posts);
-	};
-
-	const filteredPosts =
-		filterData.length > 0
-			? filterData.map((post) => (
-					<PostContainer key={post.id} post={post} />
-				))
-			: data.map((post) => (
-					<PostContainer key={post.id} post={post} />
-				));
-
-	return (
-		<div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-			<SearchBar handleFilter={handleFilter} />
-			<div className="post-layout">{filteredPosts}</div>
-		</div>
-	);
-}
+export default function App() {}
